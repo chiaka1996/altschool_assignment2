@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'SofiaPro';
+    src: url(Fonts/sofiapro-light.otf);
+}
+*{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+body{
+    background-color:#f3faf9;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 10%;
+    font-family: 'Cabin';
+    background-color: #f3faf9;
+    height: 80vh;
+}
+
+.flex1{
+    width: 35%;
+    margin: 10% 0 5% 0; 
+}
+
+#header{
+    color:#000B0A;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 0 5%;
+}
+
+#briefs{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5% 0 0 5%;
+    color: #737373;
+    line-height: 25px;
+}
+
+.flex2{
+    padding: 3% 5%;
+    background-color: white;
+    font-family: "SofiaPro";
+    width: 40%;
+    box-shadow: 0px 4px 50px 0px #0408131A;
+}
+
+.inputRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 2% 0;
+}
+
+.inputRowFlex{
+    width: 47%;
+}
+
+.inputRowFlex label, .singleInput label{
+    font-weight: 400;
+    font-size: 14px;
+}
+.input, .inputSelect, .inputSelect2{
+    width: 96%;
+    height: 48px;
+    margin: 2% 0 5% 0;
+    border: 1px solid #737373;
+    outline: none;
+    border-radius: 2px;
+    padding: 0 2%;
+    color: #737373;
+}
+
+.inputSelect2{
+    width: 100%;
+}
+
+.inputSelect{
+    width: 100%;
+}
+
+.input:active{
+    border: 1px solid #2EC4B6;
+    outline: 1px solid #2EC4B6;
+}
+
+.singleInput{
+    width: 100%;
+}
+
+#passwordInput{
+    position: relative;
+}
+
+.passwordIconContainer{
+    position: absolute;
+    bottom: 32%;
+    right: 2%;
+}
+
+.registerBtn{
+    color: #ffff;
+    background-color: #2EC4B6;
+    width: 100%;
+    height: 48px;
+    border-radius: 2px;
+    border: 1px solid #2EC4B6;
+}
+
+.terms, .termsMobile{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 1% 0 0 0;
+}
+
+.terms a, .termsMobile a{
+    color: #2EC4B6;
+    font-weight: 400;
+}
+
+.termsMobile{
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .container{
+        display: block;
+        padding: 5% 5%;
+        height: 100%;
+    }
+
+    .flex1{
+        width: 100%;
+    }
+
+    .flex2{
+        width: 90%;
+        padding: 5%;
+    }
+
+    .inputRow{
+        display: block;
+    }
+
+    .inputRowFlex{
+        width: 100%;
+    }
+
+    .passwordIconContainer{
+        position: absolute;
+        bottom: 27%;
+        right: 2%;
+    }
+
+    .terms{
+        display: none;
+    }
+
+    .termsMobile{
+        display: block;
+    }
+}

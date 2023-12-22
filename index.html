@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Sofia&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+<style>
+</style>
+<script src=""></script>
+<body>
+<main class="container">
+<section class="flex1">
+<div>
+<img src="images/Logo.png" alt="logo" id="logo">
+</div>
+<div id="header">For Individuals</div>
+<div id="briefs">
+Start benefiting from the wellness experience. 
+For companies looking on increasing productivity, 
+and improving organization wellness.
+</div>
+</section>
+
+<section class="flex2">
+    <div class="inputRow">
+        <div class="inputRowFlex">
+            <label for="firstname">First name</label><br/>
+            <Input type="text" id="firstname" class="input"/>
+        </div>
+        <div class="inputRowFlex">
+            <label for="lastname">Last name</label><br/>
+            <Input type="text" id="lastname" class="input"/>
+        </div>
+    </div>
+
+    <div class="inputRow">
+        <div class="inputRowFlex">
+            <label for="gender">Gender</label><br/>
+            <select class="inputSelect">
+                <option>Select here</option>
+                <option>male</option>
+                <option>female</option>
+            </select>
+        </div>
+        <div class="inputRowFlex">
+            <label for="date">Date of birth</label><br/>
+            <Input type="date" id="date" class="input" />
+        </div>
+    </div>
+
+    <div class="inputRow">
+        <div class="inputRowFlex">
+            <label for="weight">Weight (kg)</label><br/>
+            <Input type="text" id="weight" class="input" placeholder="'Enter weight"/>
+        </div>
+        <div class="inputRowFlex">
+            <label for="height">Height (CM)</label><br/>
+            <Input type="text" id="height" class="input" placeholder="Enter height here"/>
+        </div>
+    </div>
+
+    <div class="singleInput">
+        <label for="activity">Activity Level</label><br/>
+       <select class="inputSelect2">
+        <option>select here</option>
+        <option>walking</option>
+        <option>running</option>
+        <option>sleeping</option>
+       </select>
+    </div>
+
+    <div class="singleInput" id="passwordInput">
+        <label for="password">Password</label><br/>
+        <Input type="password" id="password" class="input" />
+        <div class="passwordIconContainer">
+        <img src="images/showPassword.svg" alt="password" id="passwordIcon">
+    </div>    
+    </div>
+
+    <button class="registerBtn">Register</button>
+    <div class="terms">
+    By clicking Register, you agree to our 
+    <a href="#">Terms of Use</a> and our 
+    <a href="#">Privacy Policy</a>
+    </div>
+</section>
+
+<div class="termsMobile">
+    By clicking Register, you agree to our 
+    <a href="#">Terms of Use</a> and our 
+    <a href="#">Privacy Policy</a>
+    </div>
+</main>
+
+</body>
+</html>
